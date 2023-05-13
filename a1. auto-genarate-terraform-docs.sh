@@ -1,0 +1,1 @@
+terraform-docs markdown . --output-file=terraform.md
