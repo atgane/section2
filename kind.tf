@@ -11,6 +11,11 @@ resource "kind_cluster" "default" {
       role  = "control-plane"
 
       extra_port_mappings {
+        container_port = 5000
+        host_port      = 30500
+      }
+
+      extra_port_mappings {
         container_port = 30080
         host_port      = 30080
       }
